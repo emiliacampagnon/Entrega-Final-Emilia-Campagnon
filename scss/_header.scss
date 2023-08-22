@@ -18,6 +18,21 @@ header{
         text-align: center;
         font-family: $tipografia1;
         font-style: italic;
+        animation-duration: 4s;
+        animation-name: aparece;
+        animation-iteration-count: infinite;
+        @keyframes aparece {
+            0%{
+                opacity: 0.4;
+            }
+            50%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0.4;
+            }
+            
+        }
     }
     .navegador{
         margin-top: 45px;

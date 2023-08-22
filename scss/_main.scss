@@ -38,6 +38,7 @@ main{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         justify-items: center;
+        
         img{
             width: 100px;
             height: 100px;
@@ -45,6 +46,24 @@ main{
             background-color: $colorfondo2;
             border-radius: 10px;
             align-self: center;
+        }
+        .ordena{
+            transition: all 2s ease;
+            &:hover{
+                transform: rotate(360deg);
+            }
+        }
+        .ordenb{
+            transition: all 2s ease;
+            &:hover{
+                transform: rotate(360deg);
+            }
+        }
+        .ordenc{
+            transition: all 2s ease;
+            &:hover{
+                transform: rotate(360deg);
+            }
         }
         h5{
             font-style: italic; 
@@ -82,12 +101,51 @@ main{
         padding: 40px;
         margin: 10px;
         justify-items: center;
+        align-items: center;
         img{
             width: 400px;
             margin: 20px;
             border-radius: 10px;
         }
+        .ordena{
+            &:hover{
+                transform: scale(1.05, 1.05);
+            }
+        }
+        .ordenb{
+            &:hover{
+                transform: scale(1.05, 1.05);
+            }
+        }
+        .ordenc{
+            &:hover{
+                transform: scale(1.05, 1.05);
+            }
+        }
+        .ordend{
+            margin: 10px;
+            &:hover{
+                transform: scale(1.05, 1.05);
+                background-color: $colorfondo2;
+            }
+        }
+        .ordene{
+            margin: 10px;
+            &:hover{
+                transform: scale(1.05, 1.05);
+                background-color: $colorfondo2;
+            }
+        }
+        .ordenf{
+            margin: 10px;
+            &:hover{
+                transform: scale(1.05, 1.05);
+                background-color: $colorfondo2;
+            }
+        }
         h5{
+            padding: 20px;
+            border-radius: 10px;
             font-style: italic; 
             font-size: 30px; 
             text-align: center;

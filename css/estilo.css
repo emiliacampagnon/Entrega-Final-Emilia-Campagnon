@@ -24,7 +24,18 @@ header {
     letter-spacing: 4px;
     text-align: center;
     font-family: "Tinos", serif;
-    font-style: italic; }
+    font-style: italic;
+    animation-duration: 4s;
+    animation-name: aparece;
+    animation-iteration-count: infinite; }
+
+@keyframes aparece {
+  0% {
+    opacity: 0.4; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.4; } }
   header .navegador {
     margin-top: 45px;
     text-align: center;
@@ -83,6 +94,18 @@ main .section2 {
     background-color: #dcd8d1;
     border-radius: 10px;
     align-self: center; }
+  main .section2 .ordena {
+    transition: all 2s ease; }
+    main .section2 .ordena:hover {
+      transform: rotate(360deg); }
+  main .section2 .ordenb {
+    transition: all 2s ease; }
+    main .section2 .ordenb:hover {
+      transform: rotate(360deg); }
+  main .section2 .ordenc {
+    transition: all 2s ease; }
+    main .section2 .ordenc:hover {
+      transform: rotate(360deg); }
   main .section2 h5 {
     font-style: italic;
     font-size: large;
@@ -117,12 +140,36 @@ main .section3 {
   grid-template-rows: 5fr 1fr;
   padding: 40px;
   margin: 10px;
-  justify-items: center; }
+  justify-items: center;
+  align-items: center; }
   main .section3 img {
     width: 400px;
     margin: 20px;
     border-radius: 10px; }
+  main .section3 .ordena:hover {
+    transform: scale(1.05, 1.05); }
+  main .section3 .ordenb:hover {
+    transform: scale(1.05, 1.05); }
+  main .section3 .ordenc:hover {
+    transform: scale(1.05, 1.05); }
+  main .section3 .ordend {
+    margin: 10px; }
+    main .section3 .ordend:hover {
+      transform: scale(1.05, 1.05);
+      background-color: #dcd8d1; }
+  main .section3 .ordene {
+    margin: 10px; }
+    main .section3 .ordene:hover {
+      transform: scale(1.05, 1.05);
+      background-color: #dcd8d1; }
+  main .section3 .ordenf {
+    margin: 10px; }
+    main .section3 .ordenf:hover {
+      transform: scale(1.05, 1.05);
+      background-color: #dcd8d1; }
   main .section3 h5 {
+    padding: 20px;
+    border-radius: 10px;
     font-style: italic;
     font-size: 30px;
     text-align: center;
@@ -197,6 +244,8 @@ footer {
   align-items: center; }
   footer img {
     margin: 20px; }
+  footer a:hover {
+    transform: scale(1.1, 1.1); }
 
 @media only screen and (max-width: 480px) {
   header {
