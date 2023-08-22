@@ -1,0 +1,11 @@
+footer{
+    background-color: $colorfondo2; 
+    color: $colorletra1; 
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        margin: 20px;
+    }
+}

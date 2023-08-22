@@ -1,0 +1,164 @@
+main{
+    .carousel-inner{
+        img{
+            display: flex;
+            width: 90%;
+            margin: auto;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+    }
+    .logowhatsapp{
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        img{
+            width: 55px;
+        }
+    }
+    .section1{        
+        p{
+            white-space: pre-line;
+            font-size: larger;
+            line-height: 1.5; 
+            font-family: $tipografia2; 
+            margin: 50px 90px;
+            color: $colorletra2;
+            background-color: $colorfondo3;
+            padding: 50px;
+            border-radius: 10px;
+
+        }
+    }
+    .section2{
+        margin: 10px;
+        padding: 20px 50px;
+        height: 240px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+        img{
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            background-color: $colorfondo2;
+            border-radius: 10px;
+            align-self: center;
+        }
+        h5{
+            font-style: italic; 
+            font-size: large; 
+            text-align: center;
+            color: $colorletra3; 
+            font-family: $tipografia1;
+            line-height: 3.5;
+        }
+    }
+    .contenedorcategoria{
+        height: 150px;
+        background-color: $colorfondo2;
+    }
+    h3{
+        padding: 15px; 
+        padding-left: 100px;
+        font-style: italic; 
+        color: $colorletra1; 
+        font-size: 35px;
+        font-family: $tipografia1;    
+    }
+    h4{
+        padding: 25px; 
+        padding-left: 100px;
+        font-style: italic; 
+        color: $colorletra1; 
+        font-size: 20px;
+        font-family: $tipografia1;
+    }
+    .section3{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 5fr 1fr;
+        padding: 40px;
+        margin: 10px;
+        justify-items: center;
+        img{
+            width: 400px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        h5{
+            font-style: italic; 
+            font-size: 30px; 
+            text-align: center;
+            color: $colorletra3; 
+            font-family: $tipografia1;
+        }
+    }
+    p{
+        white-space: pre-line;
+        font-size: larger;
+        line-height: 1.5; 
+        font-family: $tipografia2; 
+        margin: 50px 90px;
+        color: $colorletra2;
+        background-color: $colorfondo3;
+        padding: 50px;
+        border-radius: 10px;
+    }
+    .section4{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        margin: 40px;
+        img{
+            width: 400px;
+            border-radius: 10px;
+        }
+    }
+}
+.mainform{
+    height: 950px;
+    h5{
+        font-style: italic; 
+        font-size: xx-large; 
+        text-align: center;
+        margin-top: 40px;
+        color: $colorletra3; 
+        font-family: $tipografia1;
+    }
+    .formulario{
+        width: 500px;
+        height: 600px;
+        margin: 0 auto;
+        margin-top: 40px;
+        background-color: $colorfondo2; 
+        color: $colorletra1; 
+        line-height: 1.5;
+        font-family: $tipografia2;
+        font-style: inherit;
+        font-size: larger;
+        padding: 10px 40px;
+        border-radius: 5px;
+        .itemsform{
+            margin-top: 30px;
+        }
+        .contenedorboton{
+            height: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        .boton{
+            font-family: $tipografia2;
+            font-style: inherit;
+            font-size: large;
+            background-color: $colorfondo5;
+            border: none;
+        }
+        .boton:hover{
+            background-color: $colorfondo1;
+            color: $colorletra2;
+            border: none;
+        }
+    }
+}

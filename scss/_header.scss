@@ -1,0 +1,44 @@
+header{
+    height: 320px;
+    background-color: $colorfondo2;
+    text-align: center;
+    padding-top: 30px;
+    h1{
+        font-size: 90px;
+        color: $colorletra1;
+        font-weight: 200px;
+        letter-spacing: 2px;
+        text-align: center;
+        font-family: $tipografia1;
+    }
+    h2{
+        font-size: 22px;
+        color: $colorletra1;
+        letter-spacing: 4px;
+        text-align: center;
+        font-family: $tipografia1;
+        font-style: italic;
+    }
+    .navegador{
+        margin-top: 45px;
+        text-align: center;
+        list-style-type: none;
+        li{
+            display: inline-block;
+            a{
+                color: $colorletra1;
+                text-decoration: none;
+                padding: 20px;
+                margin: 20px;
+                font-size: 20px;
+                font-family: $tipografia2;
+
+                &:hover{
+                    color: $colorletra2;
+                    background-color: $colorfondo4;
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+}

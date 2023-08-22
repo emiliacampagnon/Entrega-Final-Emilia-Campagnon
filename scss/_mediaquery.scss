@@ -1,0 +1,167 @@
+@media only screen and (max-width: 480px)
+{
+    header{
+        height: 210px;
+        padding-top: 5px;
+        h1{
+            font-size: 70px;
+        }
+        h2{
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+        .navegador{
+            margin: 5px;
+            li a{
+                font-size: 15px;
+                padding: 10px;
+                margin: auto;
+            }
+        }  
+    }
+
+    main{
+        .carousel-inner{
+            img{
+                width: 100%;
+            }
+        }
+        .logowhatsapp{
+            bottom: 30px;
+            right: 30px;
+            img{
+                width: 30px;
+            }
+        }
+        .section1{
+            p{
+                font-size: 13px;
+                padding: 30px;
+                margin: 20px;
+            }
+        }
+        .section2{
+            padding: 10px;
+            margin: 0 auto;
+            height: 600px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            row-gap: 10px;
+            img{
+                width: 80px;
+                height: 80px;
+                padding: 20%;
+            }
+            .ordena{
+                order: 1;
+            }
+            .ordend{
+                order: 2;
+            }
+            .ordenb{
+                order: 3;
+            }
+            .ordene{
+                order: 4;
+            }
+            .ordenc{
+                order: 5;
+            }
+            .ordenf{
+                order: 6;
+            }
+        }
+        .contenedorcategoria{
+            height: 100px;
+        }
+        h3{
+            font-size: 22px;
+            padding: 7px;
+            padding-left: 40px;
+        }
+        h4{
+            font-size: 16px;
+            padding: 7px;
+            padding-left: 40px;
+        }
+        .section3{
+            padding: 10px;
+            height: 1500px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 5fr 1fr 5fr 1fr 5fr 1fr;
+            row-gap: 10px; 
+            justify-items: center;
+            img{
+                width: 300px;
+            }
+            h5{ 
+                font-size: x-large; 
+            }
+            .ordena{
+                order: 1;
+            }
+            .ordend{
+                order: 2;
+            }
+            .ordenb{
+                order: 3;
+            }
+            .ordene{
+                order: 4;
+            }
+            .ordenc{
+                order: 5;
+            }
+            .ordenf{
+                order: 6;
+            }
+        }
+        p{
+            font-size: medium;
+            line-height: 1.5;  
+            margin: 20px;
+            padding: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .section4{
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            img{
+                margin: 10px;
+                width: 250px;
+                border-radius: 10px;
+            }
+        }
+        
+        .contenedorformulario{
+            height: 700px;
+            h5{ 
+                font-size: 30px; 
+                margin-top: 40px;
+                }
+            .formulario{
+            width: 80%;
+            height: 90%;
+            line-height: 1.5;
+            font-size: medium;
+            }
+            .itemsform{
+            margin-top: 40px;
+            }
+            
+        }
+    }
+    
+    footer{
+        height: 100px;
+        img{
+            width: 40px;
+            margin: 10px;
+        }
+    }
+    
+}
