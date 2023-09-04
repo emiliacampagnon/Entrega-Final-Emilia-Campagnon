@@ -4,13 +4,18 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #f5f4f2; }
+  background-color: #e0d1cb; }
 
 header {
+  width: 100%;
   height: 320px;
-  background-color: #dcd8d1;
+  background-color: #844740;
   text-align: center;
   padding-top: 30px; }
+  @media screen and (max-width: 480px) {
+    header {
+      height: 210px;
+      padding-top: 5px; } }
   header h1 {
     font-size: 90px;
     color: white;
@@ -18,6 +23,9 @@ header {
     letter-spacing: 2px;
     text-align: center;
     font-family: "Tinos", serif; }
+    @media screen and (max-width: 480px) {
+      header h1 {
+        font-size: 70px; } }
   header h2 {
     font-size: 22px;
     color: white;
@@ -36,10 +44,17 @@ header {
     opacity: 1; }
   100% {
     opacity: 0.4; } }
+    @media screen and (max-width: 480px) {
+      header h2 {
+        font-size: 18px;
+        letter-spacing: 2px; } }
   header .navegador {
     margin-top: 45px;
     text-align: center;
     list-style-type: none; }
+    @media screen and (max-width: 480px) {
+      header .navegador {
+        margin: 5px; } }
     header .navegador li {
       display: inline-block; }
       header .navegador li a {
@@ -50,9 +65,14 @@ header {
         font-size: 20px;
         font-family: Arial, Helvetica, sans-serif; }
         header .navegador li a:hover {
-          color: #a99985;
+          color: #844740;
           background-color: #edede9;
           border-radius: 30px; }
+        @media screen and (max-width: 480px) {
+          header .navegador li a {
+            font-size: 15px;
+            padding: 10px;
+            margin: auto; } }
 
 main .carousel-inner img {
   display: flex;
@@ -60,24 +80,39 @@ main .carousel-inner img {
   margin: auto;
   margin-top: 10px;
   border-radius: 10px; }
+  @media screen and (max-width: 480px) {
+    main .carousel-inner img {
+      width: 100%; } }
 
 main .logowhatsapp {
   position: fixed;
   bottom: 50px;
   right: 50px; }
+  @media screen and (max-width: 480px) {
+    main .logowhatsapp {
+      bottom: 30px;
+      right: 30px; } }
   main .logowhatsapp img {
     width: 55px; }
+    @media screen and (max-width: 480px) {
+      main .logowhatsapp img {
+        width: 30px; } }
 
 main .section1 p {
   white-space: pre-line;
-  font-size: larger;
+  font-size: 20px;
   line-height: 1.5;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Tinos", serif;
   margin: 50px 90px;
-  color: #a99985;
-  background-color: #dcd8d14e;
+  color: white;
+  background-color: #8447409a;
   padding: 50px;
   border-radius: 10px; }
+  @media screen and (max-width: 480px) {
+    main .section1 p {
+      font-size: 13px;
+      padding: 30px;
+      margin: 20px; } }
 
 main .section2 {
   margin: 10px;
@@ -87,36 +122,43 @@ main .section2 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   justify-items: center; }
+  @media screen and (max-width: 480px) {
+    main .section2 {
+      height: 180px;
+      row-gap: 10px; } }
   main .section2 img {
     width: 100px;
     height: 100px;
     padding: 20px;
-    background-color: #dcd8d1;
+    background-color: #8447409a;
     border-radius: 10px;
     align-self: center; }
-  main .section2 .ordena {
-    transition: all 2s ease; }
-    main .section2 .ordena:hover {
-      transform: rotate(360deg); }
-  main .section2 .ordenb {
-    transition: all 2s ease; }
-    main .section2 .ordenb:hover {
-      transform: rotate(360deg); }
-  main .section2 .ordenc {
-    transition: all 2s ease; }
-    main .section2 .ordenc:hover {
-      transform: rotate(360deg); }
+    @media screen and (max-width: 480px) {
+      main .section2 img {
+        width: 60px;
+        height: 60px;
+        padding: 20%;
+        margin: 0px; } }
   main .section2 h5 {
     font-style: italic;
-    font-size: large;
+    font-size: 20px;
     text-align: center;
-    color: #c9ada7;
+    color: #844740;
     font-family: "Tinos", serif;
-    line-height: 3.5; }
+    line-height: 2; }
+    @media screen and (max-width: 480px) {
+      main .section2 h5 {
+        margin: 0px;
+        padding: 0px;
+        font-size: 12px;
+        line-height: 2; } }
 
 main .contenedorcategoria {
   height: 150px;
-  background-color: #dcd8d1; }
+  background-color: #844740; }
+  @media screen and (max-width: 480px) {
+    main .contenedorcategoria {
+      height: 100px; } }
 
 main h3 {
   padding: 15px;
@@ -125,6 +167,11 @@ main h3 {
   color: white;
   font-size: 35px;
   font-family: "Tinos", serif; }
+  @media screen and (max-width: 480px) {
+    main h3 {
+      font-size: 22px;
+      padding: 7px;
+      padding-left: 40px; } }
 
 main h4 {
   padding: 25px;
@@ -133,6 +180,11 @@ main h4 {
   color: white;
   font-size: 20px;
   font-family: "Tinos", serif; }
+  @media screen and (max-width: 480px) {
+    main h4 {
+      font-size: 16px;
+      padding: 7px;
+      padding-left: 40px; } }
 
 main .section3 {
   display: grid;
@@ -142,75 +194,134 @@ main .section3 {
   margin: 10px;
   justify-items: center;
   align-items: center; }
+  @media screen and (max-width: 480px) {
+    main .section3 {
+      padding: 0px;
+      margin: 0px;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 5fr 1fr 5fr 1fr 5fr 1fr;
+      row-gap: 5px;
+      justify-items: center; } }
   main .section3 img {
     width: 400px;
     margin: 20px;
     border-radius: 10px; }
+    @media screen and (max-width: 480px) {
+      main .section3 img {
+        width: 300px; } }
   main .section3 .ordena:hover {
     transform: scale(1.05, 1.05); }
+  @media screen and (max-width: 480px) {
+    main .section3 .ordena {
+      order: 1; } }
   main .section3 .ordenb:hover {
     transform: scale(1.05, 1.05); }
+  @media screen and (max-width: 480px) {
+    main .section3 .ordenb {
+      order: 3; } }
   main .section3 .ordenc:hover {
     transform: scale(1.05, 1.05); }
+  @media screen and (max-width: 480px) {
+    main .section3 .ordenc {
+      order: 5; } }
   main .section3 .ordend {
     margin: 10px; }
     main .section3 .ordend:hover {
       transform: scale(1.05, 1.05);
-      background-color: #dcd8d1; }
+      background-color: #8447409a;
+      color: white; }
+    @media screen and (max-width: 480px) {
+      main .section3 .ordend {
+        order: 2; } }
   main .section3 .ordene {
     margin: 10px; }
     main .section3 .ordene:hover {
       transform: scale(1.05, 1.05);
-      background-color: #dcd8d1; }
+      background-color: #8447409a;
+      color: white; }
+    @media screen and (max-width: 480px) {
+      main .section3 .ordene {
+        order: 4; } }
   main .section3 .ordenf {
     margin: 10px; }
     main .section3 .ordenf:hover {
       transform: scale(1.05, 1.05);
-      background-color: #dcd8d1; }
+      background-color: #8447409a;
+      color: white; }
+    @media screen and (max-width: 480px) {
+      main .section3 .ordenf {
+        order: 6; } }
   main .section3 h5 {
     padding: 20px;
     border-radius: 10px;
     font-style: italic;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
-    color: #c9ada7;
+    color: #844740;
     font-family: "Tinos", serif; }
 
 main p {
   white-space: pre-line;
-  font-size: larger;
+  font-size: 19px;
   line-height: 1.5;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Tinos", serif;
   margin: 50px 90px;
-  color: #a99985;
-  background-color: #dcd8d14e;
+  color: white;
+  background-color: #8447409a;
   padding: 50px;
   border-radius: 10px; }
+  @media screen and (max-width: 480px) {
+    main p {
+      font-size: medium;
+      line-height: 1.5;
+      margin: 20px;
+      padding: 20px;
+      padding-left: 50px;
+      padding-right: 50px; } }
 
 main .section4 {
   display: flex;
   justify-content: space-around;
   padding: 20px;
   margin: 40px; }
+  @media screen and (max-width: 480px) {
+    main .section4 {
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto; } }
   main .section4 img {
     width: 400px;
     border-radius: 10px; }
+    @media screen and (max-width: 480px) {
+      main .section4 img {
+        margin: 10px;
+        width: 250px;
+        border-radius: 10px; } }
 
 .mainform {
   height: 950px; }
+  @media screen and (max-width: 480px) {
+    .mainform {
+      height: 700px; } }
   .mainform h5 {
     font-style: italic;
-    font-size: xx-large;
+    font-size: 30px;
     text-align: center;
     margin-top: 40px;
-    color: #c9ada7;
+    color: #844740;
     font-family: "Tinos", serif; }
+    @media screen and (max-width: 480px) {
+      .mainform h5 {
+        font-size: 30px;
+        margin-top: 40px; } }
   .mainform .formulario {
     width: 500px;
     height: 600px;
     margin: 0 auto;
     margin-top: 40px;
-    background-color: #dcd8d1;
+    background-color: #8447409a;
     color: white;
     line-height: 1.5;
     font-family: Arial, Helvetica, sans-serif;
@@ -218,8 +329,17 @@ main .section4 {
     font-size: larger;
     padding: 10px 40px;
     border-radius: 5px; }
+    @media screen and (max-width: 480px) {
+      .mainform .formulario {
+        width: 80%;
+        height: 90%;
+        line-height: 1.5;
+        font-size: medium; } }
     .mainform .formulario .itemsform {
       margin-top: 30px; }
+      @media screen and (max-width: 480px) {
+        .mainform .formulario .itemsform {
+          margin-top: 40px; } }
     .mainform .formulario .contenedorboton {
       height: 40px;
       display: flex;
@@ -228,138 +348,29 @@ main .section4 {
       font-family: Arial, Helvetica, sans-serif;
       font-style: inherit;
       font-size: large;
-      background-color: #a99985;
+      background-color: #e0d1cb;
+      color: #844740;
       border: none; }
     .mainform .formulario .boton:hover {
-      background-color: #f5f4f2;
-      color: #a99985;
+      background-color: #844740;
+      color: white;
       border: none; }
 
 footer {
-  background-color: #dcd8d1;
+  background-color: #844740;
   color: white;
   height: 160px;
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media screen and (max-width: 480px) {
+    footer {
+      height: 100px; } }
   footer img {
     margin: 20px; }
+    @media screen and (max-width: 480px) {
+      footer img {
+        width: 40px;
+        margin: 10px; } }
   footer a:hover {
     transform: scale(1.1, 1.1); }
-
-@media only screen and (max-width: 480px) {
-  header {
-    height: 210px;
-    padding-top: 5px; }
-    header h1 {
-      font-size: 70px; }
-    header h2 {
-      font-size: 18px;
-      letter-spacing: 2px; }
-    header .navegador {
-      margin: 5px; }
-      header .navegador li a {
-        font-size: 15px;
-        padding: 10px;
-        margin: auto; }
-  main .carousel-inner img {
-    width: 100%; }
-  main .logowhatsapp {
-    bottom: 30px;
-    right: 30px; }
-    main .logowhatsapp img {
-      width: 30px; }
-  main .section1 p {
-    font-size: 13px;
-    padding: 30px;
-    margin: 20px; }
-  main .section2 {
-    padding: 10px;
-    margin: 0 auto;
-    height: 600px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    row-gap: 10px; }
-    main .section2 img {
-      width: 80px;
-      height: 80px;
-      padding: 20%; }
-    main .section2 .ordena {
-      order: 1; }
-    main .section2 .ordend {
-      order: 2; }
-    main .section2 .ordenb {
-      order: 3; }
-    main .section2 .ordene {
-      order: 4; }
-    main .section2 .ordenc {
-      order: 5; }
-    main .section2 .ordenf {
-      order: 6; }
-  main .contenedorcategoria {
-    height: 100px; }
-  main h3 {
-    font-size: 22px;
-    padding: 7px;
-    padding-left: 40px; }
-  main h4 {
-    font-size: 16px;
-    padding: 7px;
-    padding-left: 40px; }
-  main .section3 {
-    padding: 10px;
-    height: 1500px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 5fr 1fr 5fr 1fr 5fr 1fr;
-    row-gap: 10px;
-    justify-items: center; }
-    main .section3 img {
-      width: 300px; }
-    main .section3 h5 {
-      font-size: x-large; }
-    main .section3 .ordena {
-      order: 1; }
-    main .section3 .ordend {
-      order: 2; }
-    main .section3 .ordenb {
-      order: 3; }
-    main .section3 .ordene {
-      order: 4; }
-    main .section3 .ordenc {
-      order: 5; }
-    main .section3 .ordenf {
-      order: 6; }
-  main p {
-    font-size: medium;
-    line-height: 1.5;
-    margin: 20px;
-    padding: 20px;
-    padding-left: 50px;
-    padding-right: 50px; }
-  main .section4 {
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto; }
-    main .section4 img {
-      margin: 10px;
-      width: 250px;
-      border-radius: 10px; }
-  main .contenedorformulario {
-    height: 700px; }
-    main .contenedorformulario h5 {
-      font-size: 30px;
-      margin-top: 40px; }
-    main .contenedorformulario .formulario {
-      width: 80%;
-      height: 90%;
-      line-height: 1.5;
-      font-size: medium; }
-    main .contenedorformulario .itemsform {
-      margin-top: 40px; }
-  footer {
-    height: 100px; }
-    footer img {
-      width: 40px;
-      margin: 10px; } }

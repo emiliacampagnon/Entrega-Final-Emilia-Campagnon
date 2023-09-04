@@ -1,3 +1,9 @@
+@mixin mobile {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+
+}
 main{
     .carousel-inner{
         img{
@@ -6,27 +12,42 @@ main{
             margin: auto;
             margin-top: 10px;
             border-radius: 10px;
+            @include mobile{
+                width: 100%;
+            }
         }
     }
     .logowhatsapp{
         position: fixed;
         bottom: 50px;
         right: 50px;
+        @include mobile{
+            bottom: 30px;
+            right: 30px;
+        }
         img{
             width: 55px;
+            @include mobile{
+                width: 30px;
+            }
         }
     }
     .section1{        
         p{
             white-space: pre-line;
-            font-size: larger;
+            font-size: 20px;
             line-height: 1.5; 
-            font-family: $tipografia2; 
+            font-family: $tipografia1; 
             margin: 50px 90px;
-            color: $colorletra2;
+            color: $colorletra1;
             background-color: $colorfondo3;
             padding: 50px;
             border-radius: 10px;
+            @include mobile{
+                font-size: 13px;
+                padding: 30px;
+                margin: 20px;
+            }
 
         }
     }
@@ -38,45 +59,48 @@ main{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         justify-items: center;
+        @include mobile{
+            height: 180px;
+            row-gap: 10px;
+                       ;
+        }
+        
         
         img{
             width: 100px;
             height: 100px;
             padding: 20px;
-            background-color: $colorfondo2;
+            background-color: $colorfondo3;
             border-radius: 10px;
             align-self: center;
+            @include mobile{
+                width: 60px;
+                height: 60px;
+                padding: 20%;
+                margin: 0px;}
         }
-        .ordena{
-            transition: all 2s ease;
-            &:hover{
-                transform: rotate(360deg);
-            }
-        }
-        .ordenb{
-            transition: all 2s ease;
-            &:hover{
-                transform: rotate(360deg);
-            }
-        }
-        .ordenc{
-            transition: all 2s ease;
-            &:hover{
-                transform: rotate(360deg);
-            }
-        }
+       
         h5{
             font-style: italic; 
-            font-size: large; 
+            font-size: 20px; 
             text-align: center;
-            color: $colorletra3; 
+            color: $colorletra2; 
             font-family: $tipografia1;
-            line-height: 3.5;
+            line-height: 2;
+            @include mobile{
+                margin: 0px;
+                padding: 0px;
+                font-size: 12px;
+                line-height: 2;
+            }
         }
     }
     .contenedorcategoria{
         height: 150px;
         background-color: $colorfondo2;
+        @include mobile{
+            height: 100px;
+        }
     }
     h3{
         padding: 15px; 
@@ -85,6 +109,11 @@ main{
         color: $colorletra1; 
         font-size: 35px;
         font-family: $tipografia1;    
+        @include mobile{
+            font-size: 22px;
+            padding: 7px;
+            padding-left: 40px;
+        }
     }
     h4{
         padding: 25px; 
@@ -93,6 +122,11 @@ main{
         color: $colorletra1; 
         font-size: 20px;
         font-family: $tipografia1;
+        @include mobile{
+            font-size: 16px;
+            padding: 7px;
+            padding-left: 40px;
+        }
     }
     .section3{
         display: grid;
@@ -102,95 +136,153 @@ main{
         margin: 10px;
         justify-items: center;
         align-items: center;
+        @include mobile{
+            padding: 0px;
+            margin: 0px;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 5fr 1fr 5fr 1fr 5fr 1fr;
+            row-gap: 5px; 
+            justify-items: center;
+        }
         img{
             width: 400px;
             margin: 20px;
             border-radius: 10px;
+            @include mobile{ 
+                width: 300px;}
         }
         .ordena{
             &:hover{
                 transform: scale(1.05, 1.05);
+            }
+            @include mobile{
+                order: 1;
             }
         }
         .ordenb{
             &:hover{
                 transform: scale(1.05, 1.05);
             }
+            @include mobile{
+                order: 3;               
+            }
         }
         .ordenc{
             &:hover{
                 transform: scale(1.05, 1.05);
+            }
+            @include mobile{
+                order: 5;
             }
         }
         .ordend{
             margin: 10px;
             &:hover{
                 transform: scale(1.05, 1.05);
-                background-color: $colorfondo2;
+                background-color: $colorfondo3;
+                color: $colorletra1;
+            }
+            @include mobile{
+                order: 2;
             }
         }
         .ordene{
             margin: 10px;
             &:hover{
                 transform: scale(1.05, 1.05);
-                background-color: $colorfondo2;
+                background-color: $colorfondo3;
+                color: $colorletra1;
+            }
+            @include mobile{
+                order: 4;
             }
         }
         .ordenf{
             margin: 10px;
             &:hover{
                 transform: scale(1.05, 1.05);
-                background-color: $colorfondo2;
+                background-color: $colorfondo3;
+                color: $colorletra1;
+            }
+            @include mobile{
+                order: 6;
             }
         }
         h5{
             padding: 20px;
             border-radius: 10px;
             font-style: italic; 
-            font-size: 30px; 
+            font-size: 25px; 
             text-align: center;
-            color: $colorletra3; 
+            color: $colorletra2; 
             font-family: $tipografia1;
         }
     }
     p{
         white-space: pre-line;
-        font-size: larger;
+        font-size: 19px;
         line-height: 1.5; 
-        font-family: $tipografia2; 
+        font-family: $tipografia1; 
         margin: 50px 90px;
-        color: $colorletra2;
+        color: $colorletra1;
         background-color: $colorfondo3;
         padding: 50px;
         border-radius: 10px;
+        @include mobile{
+            font-size: medium;
+            line-height: 1.5;  
+            margin: 20px;
+            padding: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
     }
     .section4{
         display: flex;
         justify-content: space-around;
         padding: 20px;
         margin: 40px;
+        @include mobile{
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+        }
         img{
             width: 400px;
             border-radius: 10px;
+            @include mobile{
+                margin: 10px;
+                width: 250px;
+                border-radius: 10px;
+            }
         }
     }
 }
 .mainform{
     height: 950px;
+    @include mobile{
+        height: 700px;
+    }
     h5{
         font-style: italic; 
-        font-size: xx-large; 
+        font-size: 30px; 
         text-align: center;
         margin-top: 40px;
-        color: $colorletra3; 
+        color: $colorletra2; 
         font-family: $tipografia1;
+        @include mobile{
+            font-size: 30px; 
+                margin-top: 40px;
+        }
     }
     .formulario{
         width: 500px;
         height: 600px;
         margin: 0 auto;
         margin-top: 40px;
-        background-color: $colorfondo2; 
+        background-color: $colorfondo3; 
         color: $colorletra1; 
         line-height: 1.5;
         font-family: $tipografia2;
@@ -198,8 +290,17 @@ main{
         font-size: larger;
         padding: 10px 40px;
         border-radius: 5px;
+        @include mobile{
+            width: 80%;
+            height: 90%;
+            line-height: 1.5;
+            font-size: medium;
+        }
         .itemsform{
             margin-top: 30px;
+            @include mobile{
+                margin-top: 40px;
+            }
         }
         .contenedorboton{
             height: 40px;
@@ -210,12 +311,13 @@ main{
             font-family: $tipografia2;
             font-style: inherit;
             font-size: large;
-            background-color: $colorfondo5;
+            background-color: $colorfondo1;
+            color: $colorletra2;
             border: none;
         }
         .boton:hover{
-            background-color: $colorfondo1;
-            color: $colorletra2;
+            background-color: $colorfondo2;
+            color: $colorletra1;
             border: none;
         }
     }

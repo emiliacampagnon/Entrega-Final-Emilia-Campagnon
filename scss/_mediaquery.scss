@@ -1,24 +1,13 @@
+
+@mixin mobile {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+
+}
 @media only screen and (max-width: 480px)
 {
-    header{
-        height: 210px;
-        padding-top: 5px;
-        h1{
-            font-size: 70px;
-        }
-        h2{
-            font-size: 18px;
-            letter-spacing: 2px;
-        }
-        .navegador{
-            margin: 5px;
-            li a{
-                font-size: 15px;
-                padding: 10px;
-                margin: auto;
-            }
-        }  
-    }
+
 
     main{
         .carousel-inner{
@@ -43,7 +32,7 @@
         .section2{
             padding: 10px;
             margin: 0 auto;
-            height: 600px;
+            height: 800px;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -86,12 +75,13 @@
             padding-left: 40px;
         }
         .section3{
-            padding: 10px;
-            height: 1500px;
+            padding: 0px;
+            margin: 0px;
+            height: 100%;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 5fr 1fr 5fr 1fr 5fr 1fr;
-            row-gap: 10px; 
+            row-gap: 5px; 
             justify-items: center;
             img{
                 width: 300px;

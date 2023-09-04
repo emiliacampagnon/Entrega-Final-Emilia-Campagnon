@@ -1,8 +1,21 @@
+
+@mixin mobile {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+
 header{
+    width: 100%;
     height: 320px;
     background-color: $colorfondo2;
     text-align: center;
     padding-top: 30px;
+    @include mobile {
+        height: 210px;
+        padding-top: 5px;
+    }
+    
     h1{
         font-size: 90px;
         color: $colorletra1;
@@ -10,6 +23,10 @@ header{
         letter-spacing: 2px;
         text-align: center;
         font-family: $tipografia1;
+        @include mobile{
+            font-size: 70px;
+        }
+       
     }
     h2{
         font-size: 22px;
@@ -31,13 +48,20 @@ header{
             100%{
                 opacity: 0.4;
             }
-            
+        }    
+        @include mobile{
+            font-size: 18px;
+            letter-spacing: 2px;
         }
     }
     .navegador{
         margin-top: 45px;
         text-align: center;
         list-style-type: none;
+        @include mobile{
+            margin: 5px;
+        }
+        
         li{
             display: inline-block;
             a{
@@ -52,7 +76,13 @@ header{
                     color: $colorletra2;
                     background-color: $colorfondo4;
                     border-radius: 30px;
+                
                 }
+                @include mobile{
+                    font-size: 15px;
+                    padding: 10px;
+                    margin: auto;}
+                
             }
         }
     }
